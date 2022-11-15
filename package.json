@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "ng serve --host=0.0.0.0 --configuration=dev --disableHostCheck=true"
+    "start": "npm run start --public $C9_HOSTNAME"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
