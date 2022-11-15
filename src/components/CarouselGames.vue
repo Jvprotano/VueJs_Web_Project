@@ -12,7 +12,7 @@
         <slide v-for="(slide, i) in slideCount" :index="i" :key="i"> 
           <template>
             <b-card class="card-carousel">
-              <img class="image-carousel" :src="homeData[i].imgUrl" :alt="i" />
+              <img class="image-carousel" :src="homeData[i].imgUrl" :alt="homeData[i].id" />
             </b-card>
           </template>
         </slide>

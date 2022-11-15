@@ -1,5 +1,5 @@
 <template>
-<section class="contact-section bg-black">
+<section class="contact-section bg-black" id="cardMsg">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 mb-3 mb-md-0">
@@ -9,14 +9,19 @@
                                 <h4 class="text-uppercase m-0"></h4>
                                 <hr class="my-4"/>
                                 <div class="small text-black-50">
-                                    <a id="msg">Obrigado por tudo, espero que goste e principalmente sirva a aliança kkkk <br> 
-                                     Edit 1 (20-11-2021): Ninguém é perfeito, vou lá saber tamanho de dedo.<br>    
-                                    <br> 
+                                    <a id="msg">Obrigado por tudo, espero que goste e principalmente sirva a aliança kkkk <br>
                                     Sou cada dia mais certo 
                                     de que você é o amor da minha vida e que quero passar o resto dela com você. A maior oportunidade que já tive foi
 									te ter ao meu lado e sou muito grato por ter conseguido isso. Sinto sua falta todos os dias que 
-                                    não nos vemos e 2 minutos depois de te ver também (E1: Nunca muda kkk te amo), ninguém me faz tão feliz quanto você. Te amo infinitamente e 
-                                    lembre-se disso independente de qualquer coisa, do seu bunitim, Pra Minha Vida ❤                          
+                                    não nos vemos e 2 minutos depois de te ver também (Nunca muda kkk te amo), ninguém me faz tão feliz quanto você. Te amo infinitamente e 
+                                    lembre-se disso independente de qualquer coisa, do seu bunitim, Pra Minha Vida ❤ <br>
+                                    
+                                    <br>
+                                    Edit 1 (20-11-2021): Ninguém é perfeito, vou lá saber tamanho de dedo. <br>
+                                    <br> 
+                                    Edit 2 (15-11-2022): Da mesma forma que não desisto de fazer esse site ficar funcionando, prometo nunca desistir de nós dois kkk Eu te amo para sempre,
+                                    nunca me deixei que nunca te deixarei.<br>
+                                    <br>
                                   </a>
                                 </div>
                             </div>                            
@@ -34,13 +39,6 @@
             </div>
         </section>
 </template>
-
-<script>
-export default {
-      mounted() {
-  }
-};
-</script>
 
 <style scoped>
 
@@ -78,5 +76,9 @@ div.ultima{
     color: #64a19d !important;
     text-decoration: none !important;
     background-color: transparent !important;
+}
+
+#cardMsg {
+    text-align: -webkit-center;
 }
 </style>
