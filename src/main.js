@@ -11,7 +11,6 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import VueResource from 'vue-resource'
-import store from './store'
 import styles from './assets/styles.css'
 
 Vue.config.productionTip = false
@@ -29,10 +28,5 @@ Vue.use(BootstrapVue)
 
 new Vue({
   router,
-  store,
   render: h => h(App),
 }).$mount('#app')
-
-
-
-

@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-    <div id="cima">
+    <div id="up">
       <div class="spinner" id="spinnerCard" v-show="spinner">
         <vue-simple-spinner
           line-fg-color="#533784"
@@ -34,8 +34,6 @@
 import CarouselPhotos from "../components/CarouselPhotos";
 import Video from "../components/Video.vue";
 import Card from "../components/Card.vue";
-  // import HomeData from "../services/home";
-
 import VueSimpleSpinner from "vue-simple-spinner";
 
 export default {
@@ -43,7 +41,6 @@ export default {
   data() {
     return {
       spinner: false,
-      // homeData: [],
     };
   },
   components: {
@@ -52,14 +49,6 @@ export default {
     Video,
     Card,
   },
-  // mounted() {
-  //   this.spinner = true;
-  //   HomeData.homeLoadData().then((apiResponse) => {
-  //     this.homeData = apiResponse.data;
-  //     console.log(this.homeData)
-  //     this.spinner = false;
-  //   });
-  // },
 };
 </script>
 
@@ -78,14 +67,14 @@ h2 {
   align-items: center;
 }
 
-#cima {
+#up {
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
       rgba(0, 0, 0, 0.7) 75%,
       #000000 100%
     ),
-    url("../assets/coracao.jpeg");
+    url("../assets/hearts.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -108,8 +97,6 @@ h2 {
     margin-left: 41%;
 }
 }
-
-
 
 h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",

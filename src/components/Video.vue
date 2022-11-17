@@ -26,6 +26,7 @@ export default {
   width: 550px;
   height: 500px;
 }
+
 #video-container{
 display: flex;
 flex-direction: row;

@@ -42,6 +42,7 @@ export default {
     Slide,
     VueSimpleSpinner,
   },
+
   data() {
     return {
       slides: slides,
@@ -50,6 +51,7 @@ export default {
       spinner: true,
     };
   },
+
  mounted() {
    this.spinner = true;
     HomeData.homeLoadData().then((apiResponse) => {
@@ -57,6 +59,7 @@ export default {
       this.spinner = false;
     })
   },
+
   methods: {
     desativaLoading() {
       this.spinner = false;
@@ -151,9 +154,11 @@ img {
   border-radius: 10px !important;
   box-sizing: border-box;
 }
+
 h3 {
   margin-left: 30px;
 }
+
 #alo {
   position: absolute !important;
 }
@@ -161,6 +166,7 @@ h3 {
 .mainCarousel {
   margin-bottom: 200px;
 }
+
 .bg-secundary {
   background-color: transparent !important;
 }
