@@ -1,4 +1,4 @@
-# progamer 1
+# praminhavida 1
 
 ## Project setup
 ```

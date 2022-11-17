@@ -24,12 +24,12 @@
 
 <script>
 import autoplay from "./mixins/autoplay";
-import Controls from "../carousel-3d/Controls.vue";
+import Controls from "./Controls.vue";
 
 const noop = () => {};
 
 export default {
-  name: "carouselGames",
+  name: "carouselPhotos",
   components: {
     Controls,
   },

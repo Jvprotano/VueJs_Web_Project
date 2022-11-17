@@ -26,26 +26,24 @@
                                 </div>
                             </div>                            
                             <div class="ultima">
-                              <img id="imgfim" src="https://i.ibb.co/HHRyVk5/noisultima.gif" alt="ó nóis">
+                              <img id="imgfim" src="https://i.ibb.co/HHRyVk5/noisultima.gif" alt="Zé, Kaila e Sofia">
                             <p>Reis da feiura e Sofia©2020</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="social d-flex justify-content-center">
-                    <a id="mas" class="mx-2" href="https://www.instagram.com/ojvprotano/?hl=pt-br"><b-icon icon="Instagram"></b-icon></a>
-                    <a id="fem" class="mx-2" href="https://www.instagram.com/kailameloquero/?hl=pt-br"><b-icon icon="Instagram"></b-icon></a>
+                    <a id="male" class="mx-2" href="https://www.instagram.com/ojvprotano/?hl=pt-br"><b-icon icon="Instagram"></b-icon></a>
+                    <a id="female" class="mx-2" href="https://www.instagram.com/kailameloquero/?hl=pt-br"><b-icon icon="Instagram"></b-icon></a>
                 </div>
             </div>
         </section>
 </template>
 
 <style scoped>
-
 #envelop{
     color: #64a19d;
 }
-
 hr {
     display: block;
     unicode-bidi: isolate;
@@ -57,7 +55,6 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
-
 #imgfim{
     width: 293px;
     height: 156px;
@@ -71,14 +68,28 @@ div.ultima{
   font-size: 11px;
   text-indent: 0;
 }
-
 #msg {
     color: #64a19d !important;
     text-decoration: none !important;
     background-color: transparent !important;
 }
-
 #cardMsg {
     text-align: -webkit-center;
+}
+.contact-section .social #male {
+  height: 3rem;
+  width: 3rem;
+  background: rgb(46 63 185);
+  border-radius: 100%;
+  color: rgb(255 255 255);
+  line-height: 3rem;
+}
+.contact-section .social #female {
+  height: 3rem;
+  width: 3rem;
+  background: rgb(230 86 193);
+  border-radius: 100%;
+  color: rgb(255 255 255);
+  line-height: 3rem; 
 }
 </style>
