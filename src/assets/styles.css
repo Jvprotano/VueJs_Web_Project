@@ -9898,23 +9898,6 @@ body {
   }
 }
 
-.contact-section .social #mas {
-  height: 3rem;
-  width: 3rem;
-  background: rgb(46 63 185);
-  border-radius: 100%;
-  color: rgb(255 255 255);
-  line-height: 3rem;
-}
-
-.contact-section .social #fem {
-  height: 3rem;
-  width: 3rem;
-  background: rgb(230 86 193);
-  border-radius: 100%;
-  color: rgb(255 255 255);
-  line-height: 3rem; 
-}
 .contact-section .social a:hover {
   color: rgb(255, 255, 255, 255);
 }

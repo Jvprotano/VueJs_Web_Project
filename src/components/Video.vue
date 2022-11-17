@@ -26,7 +26,6 @@ export default {
   width: 550px;
   height: 500px;
 }
-
 #video-container{
 display: flex;
 flex-direction: row;
@@ -34,6 +33,4 @@ justify-content: center;
 align-items: center;
 margin-top: -4rem;
 }
-
-
 </style>
