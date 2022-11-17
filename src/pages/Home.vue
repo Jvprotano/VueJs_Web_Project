@@ -9,7 +9,7 @@
           style="margin:7cm auto"
          ></vue-simple-spinner>
       </div>
-      <CarouselGames v-show="!spinner"/>
+      <CarouselPhotos v-show="!spinner"/>
       <div class="mx-auto text-center" id="texto-container">
         <h2 class="text-white-50 mx-auto mt-2 mb-5">Nunca esqueça o quanto</h2>
         <h1 class="mx-auto my-0 text-uppercase">Eu amo você</h1>
@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import CarouselGames from "../components/CarouselGames";
+import CarouselPhotos from "../components/CarouselPhotos";
 import Video from "../components/Video.vue";
 import Card from "../components/Card.vue";
   // import HomeData from "../services/home";
@@ -47,7 +47,7 @@ export default {
     };
   },
   components: {
-    CarouselGames,
+    CarouselPhotos,
     VueSimpleSpinner,
     Video,
     Card,

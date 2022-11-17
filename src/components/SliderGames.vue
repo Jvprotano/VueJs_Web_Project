@@ -52,7 +52,7 @@
 <script scoped>
 import Slide from "@/carousel-3d/Slide";
 import Courses from "../services/home";
-import CarouselGames from "../carousel-3d/CarouselGames.vue";
+import CarouselPhotos from "../carousel-3d/CarouselPhotos.vue";
 
 const slides = [
   {
@@ -67,7 +67,7 @@ export default {
   idCourse: 1,
 
   components: {
-    CarouselGames,
+    CarouselPhotos,
     Slide,
   },
   data() {
