@@ -183,14 +183,14 @@ h3 {
 #btn-refresh {
     width: 50px!important;
     height: 50px!important;
-    opacity: 20%;
+    opacity: 20%!important;
 }
 
 #btn-refresh:hover {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
-  opacity: 100%;
+  opacity: 100%!important;
 }
 
 .div-btn-refresh{
