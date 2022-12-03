@@ -1,5 +1,6 @@
 <template>
   <div id="home">
+  <!-- <Teste /> -->
     <div id="up">
       <div class="spinner" id="spinnerCard" v-show="spinner">
         <vue-simple-spinner
@@ -22,6 +23,7 @@
       <router-view />
     </div>
     <Card />
+  <Christmas v-show="isChristmas"/>
     <footer class="footer bg-black small text-center text-white-50">
       <div class="container">
         Criado pelo amor da sua vida! J&K - Pra Minha Vida
@@ -35,12 +37,17 @@ import CarouselPhotos from "../components/CarouselPhotos";
 import Video from "../components/Video.vue";
 import Card from "../components/Card.vue";
 import VueSimpleSpinner from "vue-simple-spinner";
+import Christmas from "../components/Christmas.vue";
+
+// import Teste from "../services/snowstorm";
+
 
 export default {
   name: "Home",
   data() {
     return {
       spinner: false,
+      isChristmas: new Date().getMonth() == 11
     };
   },
   components: {
@@ -48,6 +55,8 @@ export default {
     VueSimpleSpinner,
     Video,
     Card,
+    Christmas
+    // Teste
   },
 };
 </script>

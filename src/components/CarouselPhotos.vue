@@ -54,7 +54,6 @@ export default {
       spinner: true,
     };
   },
-    
 
  mounted() {
     this.spinner = true;
@@ -96,8 +95,10 @@ export default {
       }
     },
     getImages(){
+      this.spinner = true;
       HomeData.homeLoadData().then((apiResponse) => {
       this.homeData = apiResponse.data;
+      this.spinner = false;
     })
     },
   },
