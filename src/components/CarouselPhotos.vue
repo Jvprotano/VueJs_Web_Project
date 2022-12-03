@@ -9,14 +9,17 @@
         ></vue-simple-spinner>
       </div>
       <carousel-3d :controls-visible="true" :space="400" v-show="!spinner">
-        <slide v-for="(slide, i) in slideCount" :index="i" :key="i"> 
-          <template>
+        <slide v-for="(slide, i) in slideCount" :index="i" :key="i.id"> 
+          <template> 
             <b-card class="card-carousel">
-              <img class="image-carousel" :src="homeData[i].imgUrl" :alt="homeData[i].id" />
+               <img class="image-carousel" :src="homeData[i].imgUrl" :alt="homeData[i].id" />
             </b-card>
           </template>
         </slide>
       </carousel-3d>
+      <div class="div-btn-refresh">
+        <img src="../assets/helpers/btn-refresh.png" id="btn-refresh" v-on:click="getImages" title="Atualizar imagens"/>
+      </div>
     </div>
   </div>
 </template>
@@ -51,13 +54,12 @@ export default {
       spinner: true,
     };
   },
+    
 
  mounted() {
-   this.spinner = true;
-    HomeData.homeLoadData().then((apiResponse) => {
-      this.homeData = apiResponse.data;
-      this.spinner = false;
-    })
+    this.spinner = true;
+    this.getImages();
+    this.spinner = false;
   },
 
   methods: {
@@ -93,8 +95,14 @@ export default {
         this.slideCount--;
       }
     },
+    getImages(){
+      HomeData.homeLoadData().then((apiResponse) => {
+      this.homeData = apiResponse.data;
+    })
+    },
   },
 };
+
 </script>
 
 <style scoped>
@@ -105,7 +113,7 @@ export default {
   position: relative !important;
 }
 
-img {
+.image-carousel {
   box-shadow: 0 0 40px rgb(0 0 0 / 15%) !important;
   height: 300px;
   object-fit: cover !important;
@@ -169,5 +177,24 @@ h3 {
 
 .bg-secundary {
   background-color: transparent !important;
+}
+
+#btn-refresh {
+    width: 50px!important;
+    height: 50px!important;
+    opacity: 20%;
+}
+
+#btn-refresh:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 100%;
+}
+
+.div-btn-refresh{
+  display: flex;
+    justify-content: right;
+    margin-right: 4%;
 }
 </style>
