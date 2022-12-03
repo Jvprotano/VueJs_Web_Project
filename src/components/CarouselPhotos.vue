@@ -115,7 +115,6 @@ export default {
 
 .image-carousel {
   box-shadow: 0 0 40px rgb(0 0 0 / 15%) !important;
-  height: 300px;
   object-fit: cover !important;
   box-sizing: border-box !important;
   width: 100% !important;
@@ -153,6 +152,7 @@ export default {
 }
 .card {
   border: 0px !important;
+  background-color: transparent;
 }
 
 .card-body {
